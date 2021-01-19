@@ -47,7 +47,7 @@ function screen1({ navigation }) {
           <TouchableHighlight 
            key={result.imdbID}
            onPress={() =>
-            navigation.navigate('screen2')
+            navigation.navigate('screen2',{result: result})
           }>
           <View style={styles.result} >
             <Image
