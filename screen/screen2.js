@@ -9,6 +9,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 
 function screen2({ navigation }) {
+    const result= navigation.getParam('result')
     <TouchableHighlight 
     key={result.imdbID}
      onPress={()=> Nextpage( navigation.getparam('result.imdbID'))}>
